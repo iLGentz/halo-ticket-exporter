@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "HALO Ticket Exporter",
+  "version": "0.1.1",
+  "description": "Esporta la chat di un ticket HALO in un file HTML con immagini incorporate.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://psa.ambient7.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
